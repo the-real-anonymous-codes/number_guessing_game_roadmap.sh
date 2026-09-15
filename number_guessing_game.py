@@ -27,10 +27,9 @@ else :
 
 print(f"You have {attempts} attempts to guess the number ")
 
-attempt_taken = 0
 for i in range (attempts):
     guess  = int(input(f"{i+1} Enter your guess: "))
-    attempt_taken = attempt_taken + 1
+    
     if guess > number :
         print(f"Incorrect! The number is less than {guess}")
 
@@ -38,5 +37,5 @@ for i in range (attempts):
         print(f"Incorrect! The number is greater than {guess}") 
 
     else :
-        print(f"Congratulations! You guessed the correct number in {i+1} {attempt_taken} attempts.")
+        print(f"Congratulations! You guessed the correct number in {i+1} attempts.")
         exit()
